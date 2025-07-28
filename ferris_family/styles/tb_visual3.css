@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*
+   Author: Chia Chieh Lin
+   Date:   17/Jun/2023
+   Filename: tb_visual3.css
+*/
+
+/* HTML Styles */
+html {
+  background-image: url(../images/tb_back5.png);
+}
+
+/* Page Body Styles */
+body {
+  border-width: 8px;
+  border-color: rgb(170, 130, 90);
+  box-shadow: 30px 0px 50px rgb(50, 20, 0),
+    -30px 0px 50px rgb(50, 20, 0);
+}
+
+/* Main Styles */
+main {
+  background-image: url(../images/tb_back7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset -20px -20px 50px rgb(70, 70, 70),
+    inset 20px 20px 50px rgb(70, 70, 70);
+}
+
+main header h1 {
+  text-shadow: 3px 3px 0px rgb(220, 220, 220),
+    8px 8px 25px rgba(40, 40, 40, 1);
+}
+
+/* Figure Box Styles */
+figure {
+  margin: 30px auto;
+  width: 90%;
+}
+
+figure img {
+  border-width: 30px;
+  border-style: solid;
+  border-image-source: url(../images/tb_frame.png);
+  border-image-slice: 80;
+  border-image-repeat: stretch;
+  display: block;
+  width: 100%;
+  filter: sepia(1);
+}
+
+figcaption {
+  font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+  font-style: italic;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Article Styles */
+article {
+  background-image: url(../images/tb_back6.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 25%;
+  border-right-width: 10px;
+  border-right-style: double;
+  border-right-color: rgb(150, 115, 70);
+  border-bottom-width: 10px;
+  border-bottom-style: double;
+  border-bottom-color: rgb(150, 115, 70);
+  border-radius: 0 0 100px 0;
+  box-shadow: inset -20px -20px 50px rgba(185, 155, 110, 0.8);
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(325deg, rgb(180, 150, 105) 30%, rgb(40, 35, 25) 70%);
+}
+
+

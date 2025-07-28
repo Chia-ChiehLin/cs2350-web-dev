@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   Author: Chia Chieh Lin
+   Date:   17/Jun/2023
+   Filename: tb_visual4.css
+*/
+
+
+/* Transformation Styles */
+article {
+   transform-style: preserve-3d;
+   perspective: 640px;
+}
+
+figure#figure1 {
+   transform: translateZ(-96px);
+}
+
+figure#figure2 {
+   transform: rotateY(30deg) translateY(-20px);
+}
+
+figure#figure3 {
+   transform: translateY(-30px) rotateY(-20deg);
+}
+
+/* Filter Styles */
+figure#figure1 {
+   filter: saturate(130%);
+}
+
+figure#figure2 {
+   filter: brightness(80%) contrast(150%);
+}
+
+figure#figure3 {
+   filter: hue-rotate(170deg) saturate(300%) brightness(150%);
+}
