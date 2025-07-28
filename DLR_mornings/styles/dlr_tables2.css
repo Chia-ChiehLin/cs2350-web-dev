@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*
+
+   Tables Style Sheet
+   Author: Chia Chieh Lin
+   Date:   09/Jun/2023
+
+   Filename:         dlr_tables2.css
+
+*/
+
+/* Table Styles */
+table.programs {
+   width: 100%;
+   border: 10px solid rgb(50, 100, 150);
+   border-collapse: collapse;
+   font-family: 'Montserrat', sans-serif;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table.programs tr {
+   height: 30px;
+}
+
+table.programs th,
+table.programs td {
+   border: 1px solid rgb(200, 200, 200);
+   vertical-align: top;
+   padding: 10px;
+}
+
+/* Table Caption Styles */
+table.programs caption {
+   caption-side: bottom;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(50, 100, 150);
+   padding: 10px;
+}
+
+/* Table Column Styles */
+col.timeColumn {
+   width: 10%;
+   background: linear-gradient(to bottom, rgb(255, 200, 100), rgb(255, 150, 50));
+}
+
+col.wDayColumns {
+   width: 11%;
+   background: linear-gradient(to bottom, rgb(200, 255, 230), rgb(150, 220, 180));
+}
+
+col.wEndColumns {
+   width: 200px;
+   background: linear-gradient(to bottom, rgb(255, 200, 220), rgb(255, 150, 180));
+}
+
+
+/* Table Header Styles */
+table.programs thead {
+   color: white;
+   background: linear-gradient(to right, rgb(80, 120, 160), rgb(50, 100, 150));
+}
+
+table.programs thead th:first-child {
+   background: linear-gradient(to right, rgb(160, 80, 40), rgb(200, 120, 100));
+}
+
+table.programs thead th:nth-child(7),
+table.programs thead th:nth-child(8) {
+   background: linear-gradient(to right, rgb(160, 80, 120), rgb(200, 120, 160));
+}
+
+.weekday-header {
+   background-color: lightgreen;
+} 
+
+/* Table Footer Styles */
+table.programs tfoot {
+   color: white;
+   background: linear-gradient(to right, rgb(20, 40, 60), rgb(0, 20, 40));
+   font-size: 14px;
+   font-style: italic;
+   padding: 5px;
+}
+
