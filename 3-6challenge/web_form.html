@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Competition Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('images/photo.1.png');">
+  <header>
+    <h1>Pet Competition</h1>
+  </header>
+      
+
+  <form action="http://cs2350.richfry.com/" method="POST">
+    <fieldset>
+      <legend>Pet Information</legend>
+
+      <label for="pet-name">Name:</label>
+      <input type="text" id="pet-name" name="pet-name" required>
+
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label>Pet Type:</label>
+      <label for="cat"><input type="radio" id="cat" name="pet-type" value="Cat">Cat</label>
+      <label for="dog"><input type="radio" id="dog" name="pet-type" value="Dog">Dog</label>
+      <label for="reptile"><input type="radio" id="reptile" name="pet-type" value="Reptile">Reptile</label>
+      <label for="bird"><input type="radio" id="bird" name="pet-type" value="Bird">Bird</label>
+      <label for="rodent"><input type="radio" id="rodent" name="pet-type" value="Rodent">Rodent</label>
+
+      <label for="pet-bio">Pet Bio:</label>
+      <textarea id="pet-bio" name="pet-bio" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <label for="owner-name">Owner Name:</label>
+      <input type="text" id="owner-name" name="owner-name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Competition Entry</legend>
+
+      <label>Competition:</label>
+      <label for="singing"><input type="checkbox" id="singing" name="competition[]" value="Singing">Singing Pet Competition</label>
+      <label for="cutest"><input type="checkbox" id="cutest" name="competition[]" value="Cutest">Cutest Pet Competition</label>
+      <label for="tricks"><input type="checkbox" id="tricks" name="competition[]" value="Tricks">Pet Tricks Competition</label>
+
+      <label for="entry-name">Entry Name:</label>
+      <input type="text" id="entry-name" name="entry-name" required>
+
+      <label for="tricks-select">Tricks:</label>
+      <select id="tricks-select" name="tricks-select">
+        <option value="Obstacle Course">Obstacle Course</option>
+        <option value="Frisbee/Ball/Other Catching">Frisbee/Ball/Other Catching</option>
+        <option value="Roll Over/Play Dead">Roll Over/Play Dead</option>
+        <option value="Other">Other</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Boarding Information</legend>
+
+      <label for="boarding-days">Number of Boarding Days:</label>
+      <input type="number" id="boarding-days" name="boarding-days" min="0" max="3" required>
+
+      <label for="kennel-size">Size of Kennel (in inches):</label>
+      <input type="range" id="kennel-size" name="kennel-size" min="0" max="48" step="8">
+
+      <label for="entry-description">Entry Description:</label>
+      <textarea id="entry-description" name="entry-description" rows="4" required></textarea>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
