@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* Style for the game title */
+h1 {
+    position: absolute; 
+    top: -200px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    font-size: 60px;
+    color: lightgray;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+/* Set the background style for the page */
+body {
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style for the game card table */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 32px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    background: rgb(223, 99, 212);
+    margin: 0 auto;
+}
+
+/* Style for the game area */
+div#game {
+    position: relative; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Style for the start game form */
+div#startForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Style for message and winner notifications */
+div#messageDiv, div#winnerDiv {
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the number input and start button */
+input#numSymbols, button#startButton {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    font-size: 32px;
+}
+
+/* Style for clickable and flipped cards */
+td.card_click, td.card_before {
+    background: #ff9900;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Hover effect on clickable cards */
+td.card_click:hover {
+    background: #ffcc00;
+}
+
+/* Style for the start button */
+button#startButton {
+    background: #ff9900;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button#startButton:hover {
+    background: #ffcc00;
+    color: #4a4a4a;
+}
+
+/* Style for the "Play Again" button */
+button#playAgainButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button#playAgainButton:hover {
+    background: #357ebd;
+    color: #fff;
+}
+
+table {
+    display: block;
+    background: rgb(223, 99, 212);
+    margin: 0 auto;
+}
+
+td.card_click {
+    background: rgb(50, 250, 50);
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+td.card_before {
+    background: rgb(255, 255, 255);
+    margin: 15px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    float: left;
+}
+
+div#messageDiv {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
