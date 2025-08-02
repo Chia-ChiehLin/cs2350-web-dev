@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* arrays.css */
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgb(186, 186, 186);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  border-top: 1px solid black; /* 添加頂部邊框 */
+  padding-top: 10px; /* 調整頂部內邊距，使得平行線和文字之間有一些間距 */
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  padding-top: 10px; /* 調整頂部內邊距，使得平行線和文字之間有一些間距 */
+}
+
+table {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 3px 3px 10px rgb(99, 101, 101);
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* arrays.css */
+
+/* ... (之前的CSS代碼保持不變) */
+
+ul {
+  margin: 0 auto;
+  list-style-type: disc;
+  list-style-position: inside; /* 將disc移動到文字內部 */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-position: inside; /* 將disc移動到文字內部 */
+  margin-bottom: 5px;
+}
+
+footer#dates {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px rgb(99, 101, 101);
+    height: 100px;
+    padding-top: 3px;
+    padding:center;
+}
