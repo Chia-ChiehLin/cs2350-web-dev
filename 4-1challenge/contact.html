@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chia Chieh Lin Portfolio</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="resume.html">My Resume</a></li>
+          <li><a href="hobbies.html">My Hobbies</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="1-5challenge/index.html">CS 2350 Assignments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="portfolio-section">
+        <h1>Contact Me</h1>
+        <h3>Please provide your information below</h3>
+        <form action="http://example.com/submit_form.php" method="post">
+          <fieldset class="user-info">
+            <legend>Your Information</legend>
+            <div class="form-row">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="firstName" placeholder="Jack" required>
+            </div>
+            <div class="form-row">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="lastName" placeholder="Lin" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jacklin@gamil.com" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="801-000-0000" required>
+            </div>
+            <fieldset class="contact-preference">
+              <legend>Preferred Contact Method</legend>
+              <div class="form-row">
+                <label for="contact_email">Email</label>
+                <input type="radio" id="contact_email" name="contactMethod" value="email">
+              </div>
+              <div class="form-row">
+                <label for="contact_phone">Phone</label>
+                <input type="radio" id="contact_phone" name="contactMethod" value="phone">
+              </div>
+            </fieldset>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+          </fieldset>
+          <div class="form-buttons">
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Chia Chieh Lin Portfolio 2023</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
