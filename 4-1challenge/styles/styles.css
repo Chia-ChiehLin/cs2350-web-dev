@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 250px;
+  width: calc(100% - 500px); /* 調整這裡的數值 */
+  max-width: 100%;
+  height: 60px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: purple;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(250, 250, 250, 0.8);
+  color: black;
+}
+
+
+/* section */
+
+section h1 {
+  padding: 35px 0;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  font-size: 24px;
+  color: lightgray;
+  text-align: center;
+}
+
+section h3 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  width: 400px;
+  border: 10px solid plum;
+  margin: 0 auto;
+}
+
+section p.border-p {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border: 0cm solid gray;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  font-family: "Comic Sans MS", cursive;
+}
+
+section p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+section iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+section table {
+  background-color: #1240d9;
+  color: #ffffff;
+  margin: 20px auto;
+  max-width: 400px;
+  border-collapse: separate; /* 將 border-collapse 設置為 separate */
+  border-spacing: 0; /* 添加 border-spacing 屬性來調整單元格間的間距 */
+  font-size: 14px;
+  width: 100%;
+  border: 2px dashed #ffffff; /* 使用虛線白色邊框，寬度為2px */
+}
+
+section table th,
+section table td {
+  padding: 10px;
+  border: 1px solid #ffffff; /* 使用實線白色邊框，寬度為1px */
+}
+
+
+
+section form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+section form fieldset {
+  padding: 20px;
+}
+
+section form textarea {
+  width: 100%;
+  height: 150px;
+}
+
+section form div.form-row {
+  padding: 10px;
+}
+
+section form fieldset.best-way input {
+  float: none;
+}
+
+section form div.buttons {
+  margin: 20px auto;
+  text-align: center;
+  width: 200px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  width: 400px;
+  border: 10px solid plum;
+  margin: 0 auto;
+}
+
+/* Form Buttons */
+input[type="submit"],
+input[type="reset"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background: #1240d9;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.5;
+}
+
+/* Form Input Validation */
+input#user_firstname:focus:valid,
+input#user_lastname:focus:valid,
+input#user_email:focus:valid,
+input#user_phone:focus:valid {
+  background: rgb(220, 255, 220) url(../images/port_valid.png) bottom right / contain no-repeat;
+}
+
+input#user_firstname:focus:invalid,
+input#user_lastname:focus:invalid,
+input#user_email:focus:invalid,
+input#user_phone:focus:invalid {
+  background: rgb(255, 232, 233) url(../images/port_invalid.png) bottom right / contain no-repeat;
+}
+
+/* Anchor Links */
+a.top-anchor {
+  padding: 20px;
+  width: 200px;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  background-color: #1240d9;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+a.top-anchor:hover {
+  opacity: 0.5;
+}
+
+/* Footer */
+footer {
+  margin: 20px auto;
+  padding: 10px;
+  margin-bottom: 0%;
+  position: fixed;
+  bottom: 0;
+  width: 65%;
+  background-color: purple;
+  text-align: center;
+}
+
+footer nav,
+footer section {
+  float: center;
+  width: 25%;
+}
+
+footer nav ul {
+  line-height: 2em;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:visited,
+footer a:link {
+  color: white;
+}
+
+footer a:hover,
+footer a:active {
+  color: white;
+}
+
+footer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.footer-content {
+  text-align: center;
+  color: lightgray;
+}
+
+/* Body Header Styles */
+body > header nav#topLinks {
+  background-color: rgb(51, 52, 45);
+  color: white;
+  line-height: 1.7em;
+  text-align: right;
+  padding: 5px 10px 5px 0px;
+  margin-bottom: 20px;
+}
+
+body > header nav#topLinks h1 {
+  width: 150%;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  background-color: #f3f3f3;
+  padding: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+
+/* Body Background Image */
+body {
+  background-image: url('../images/photo1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-top: 0px;
+  padding: 0;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.next-page-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+}
+
+.next-page-button:hover {
+  background-color: #ff0000;
+}
